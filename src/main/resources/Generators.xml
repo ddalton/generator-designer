@@ -1,0 +1,163 @@
+<Generators>
+  <generator>
+    <displayName>Default generator</displayName>
+    <className>tools.xor.generator.DefaultGenerator</className>
+    <type>COLUMN</type>
+    <description>Use to generate random values</description>
+    <htmlHelp><![CDATA[
+      <html>
+        <head>
+        <style>
+        #datatypes {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #datatypes td, #datatypes th {
+          border: 1px solid #dddddd;
+          padding: 8px;
+        }
+
+        #datatypes tr:hover {background-color: #dddddd;}
+
+        #datatypes th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #31394c;
+          color: white;
+        }
+        </style>
+        </head>
+
+        <body>
+          <h2 style="color: #31394c;">Default generator</h2>
+          <p>This is a good choice to create random values for different column types. Each database type rely on different argument values to be passed to the generator. The generator types are Java based and the mapping to the database type is specified in the approprite DB translator class. The currently supported databases are HANA, H2 and HSQLDB. The table below describes what these arguments are and how they are interpreted by this generatoro:</p>
+          <table id="datatypes">
+            <tr>
+              <td>Type name</td>
+              <td>Description</td>
+              <td>Arguments</td>
+            </tr>
+            <tr>
+              <td>Byte</td>
+              <td>Generates a random byte value between a specified minimum (inclusive) and a maximum (exclusive).</td>
+              <td>Can be configured with 0, 1 or 2 arguments. If 0 arguments are passed, then the minimum value is Byte.MIN_VALUE (-128) and the maximum value is Byte.MAX_VALUE (127). If 1 argument is passed, then the argument value is the mininum value and Byte.MAX_VALUE is the maximum value</td>
+            </tr>
+            <tr>
+              <td>Short</td>
+              <td>Generates a random short value between a specified minimum (inclusive) and a maximum (exclusive).</td>
+              <td>Can be configured with 0, 1 or 2 arguments. If 0 arguments are passed, then the minimum value is Short.MIN_VALUE (-32768) and the maximum value is Byte.MAX_VALUE (32767). If 1 argument is passed, then the argument value is the mininum value and Short.MAX_VALUE is the maximum value</td>
+            </tr>
+            <tr>
+              <td>Char</td>
+              <td>Generates a random character value between a specified minimum (inclusive) and a maximum (exclusive).</td>
+              <td>Can be configured with 0, 1 or 2 arguments. If 0 arguments are passed, then the minimum value is Character.MIN_VALUE (0) and the maximum value is Character.MAX_VALUE (65535). If 1 argument is passed, then the argument value is the mininum value and Character.MAX_VALUE is the maximum value</td>
+            </tr>
+          </table>
+        </body>
+      </html>
+
+    ]]>
+    </htmlHelp>
+  </generator>
+  <generator>
+    <displayName>String Template</displayName>
+    <className>tools.xor.generator.StringTemplate</className>
+    <type>COLUMN</type>
+    <description>Use built-in tokens within a string template to customize the generated values</description>
+    <htmlHelp><![CDATA[
+      <html>
+        <head>
+        <style>
+        #datatypes {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #datatypes td, #datatypes th {
+          border: 1px solid #dddddd;
+          padding: 8px;
+        }
+
+        #datatypes tr:nth-child(even){background-color: #f2f2f2;}
+
+        #datatypes tr:hover {background-color: #dddddd;}
+
+        #datatypes th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #31394c;
+          color: white;
+        }
+        </style>
+        </head>
+
+        <body>
+          <h2 style="color: #31394c;">String Template generator</h2>
+          <p>This is a good choice to create random values for different column types. Each database type rely on different argument values to be passed to the generator. The generator types are Java based and the mapping to the database type is specified in the approprite DB translator class. The currently supported databases are HANA, H2 and HSQLDB. The table below describes what these arguments are and how they are interpreted by this generatoro:</p>
+          <table id="datatypes">
+            <tr>
+              <td>Type name</td>
+              <td>Description</td>
+              <td>Arguments</td>
+            </tr>
+          </table>
+        </body>
+      </html>
+      ]]>
+    </htmlHelp>
+  </generator>
+  <generator>
+    <displayName>Counter</displayName>
+    <className>tools.xor.CounterGenerator</className>
+    <type>ROW</type>
+    <description>Use to control the number of rows to be generated</description>
+    <htmlHelp><![CDATA[
+      <html>
+        <head>
+        <style>
+        #datatypes {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #datatypes td, #datatypes th {
+          border: 1px solid #dddddd;
+          padding: 8px;
+        }
+
+        #datatypes tr:nth-child(even){background-color: #f2f2f2;}
+
+        #datatypes tr:hover {background-color: #dddddd;}
+
+        #datatypes th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #31394c;
+          color: white;
+        }
+        </style>
+        </head>
+
+        <body>
+          <h2 style="color: #31394c;">Counter generator</h2>
+          <p>This is a good choice to create random values for different column types. Each database type rely on different argument values to be passed to the generator. The generator types are Java based and the mapping to the database type is specified in the approprite DB translator class. The currently supported databases are HANA, H2 and HSQLDB. The table below describes what these arguments are and how they are interpreted by this generatoro:</p>
+          <table id="datatypes">
+            <tr>
+              <td>Type name</td>
+              <td>Description</td>
+              <td>Arguments</td>
+            </tr>
+          </table>
+        </body>
+      </html>
+      ]]>
+    </htmlHelp>
+  </generator>
+</Generators>
